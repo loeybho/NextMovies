@@ -14,7 +14,7 @@ export default async function MovieVideos({ id }: { id: string }) {
   return (
     <div className={styles.container}>
       <h6>
-        {videos.map((video) => (
+        {videos.map((video: any) => (
           <iframe
             key={video.id}
             src={`https://youtube.com/embed/${video.key}`}
